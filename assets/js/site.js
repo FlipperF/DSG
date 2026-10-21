@@ -5,13 +5,11 @@ const assetBase = new URL('../images/', document.currentScript.src).href;
 const optimizedPhotoSizes = {"tow-highway-modal":{"width":640,"height":853,"widths":[320,480,640]},"brands-diagnostic":{"width":800,"height":600,"widths":[320,480,640,800]},"brands-hero":{"width":900,"height":675,"widths":[320,480,640,900]},"brands-modal":{"width":640,"height":853,"widths":[320,480,640]},"clutch-phone":{"width":800,"height":600,"widths":[320,480,640,800]},"diagnostic-phone":{"width":800,"height":600,"widths":[320,480,640,800]},"dsg-diagnostic-client":{"width":800,"height":600,"widths":[320,480,640,800]},"dsg-hero-client":{"width":900,"height":675,"widths":[320,480,640,900]},"dsg-modal-client":{"width":640,"height":853,"widths":[320,480,640]},"dsg-repair-client":{"width":800,"height":600,"widths":[320,480,640,800]},"gearboxes-clutch":{"width":800,"height":600,"widths":[320,480,640,800]},"gearboxes-diagnostic":{"width":800,"height":600,"widths":[320,480,640,800]},"gearboxes-hero":{"width":900,"height":675,"widths":[320,480,640,900]},"gearboxes-modal":{"width":640,"height":853,"widths":[320,480,640]},"gearboxes-repair":{"width":800,"height":600,"widths":[320,480,640,800]},"hero-phone":{"width":900,"height":675,"widths":[320,480,640,900]},"home-clutch-fitting":{"width":800,"height":600,"widths":[320,480,640,800]},"home-gearbox-stand":{"width":800,"height":600,"widths":[320,480,640,800]},"home-mechatronic-detail":{"width":800,"height":600,"widths":[320,480,640,800]},"home-modal":{"width":640,"height":853,"widths":[320,480,640]},"home-test-drive":{"width":800,"height":600,"widths":[320,480,640,800]},"mechatronic-phone":{"width":800,"height":600,"widths":[320,480,640,800]},"shop-phone":{"width":800,"height":600,"widths":[320,480,640,800]}};
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
-// Directory URLs on the server; direct-file previews resolve them to local index files.
+// Directory URLs also work under repository/subfolder hosting; local file previews use index.html.
 if(location.protocol==='file:'){
- const siteRoot=new URL('../../',document.currentScript.src);
- document.querySelectorAll('a[href^="/"]').forEach(link=>{
-  const target=new URL(link.getAttribute('href'),'https://local.invalid');
-  const local=target.pathname==='/'?'index.html':target.pathname.replace(/^\//,'').replace(/\/$/,'/index.html');
-  link.href=new URL(local+target.search+target.hash,siteRoot).href;
+ document.querySelectorAll('a[href]').forEach(link=>{
+  const target=new URL(link.getAttribute('href'),location.href);
+  if(target.protocol==='file:'&&target.pathname.endsWith('/'))link.href=new URL('index.html'+target.search+target.hash,target).href;
  });
 }
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');

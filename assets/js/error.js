@@ -17,6 +17,8 @@ document.querySelectorAll('[data-close-contact]').forEach(button=>button.addEven
 contactDialog.addEventListener('click',event=>{if(event.target!==contactDialog)return;const r=contactDialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)contactDialog.close();});
 
 if(location.protocol==='file:'){
- const siteRoot=new URL('../',location.href);
- document.querySelectorAll('a[href="/"]').forEach(link=>link.href=new URL('index.html',siteRoot).href);
+ document.querySelectorAll('a[href]').forEach(link=>{
+  const target=new URL(link.getAttribute('href'),location.href);
+  if(target.protocol==='file:'&&target.pathname.endsWith('/'))link.href=new URL('index.html'+target.search+target.hash,target).href;
+ });
 }
