@@ -654,3 +654,6 @@ body input:not([type=checkbox]):focus,body textarea:focus,body select:focus{outl
 @media(max-width:700px){.model-image{margin:-23px -23px 21px;aspect-ratio:16/10}.model-card-action{font-size:15px}}
 @media(max-width:359px){.model-image{margin:-21px -21px 21px}}
 @media(prefers-reduced-motion:reduce){.model-card,.model-image img,.model-card-action svg{transition:none}.model-card:hover .model-image img,.model-card:hover .model-card-action svg{transform:none}}
+
+/* On phones the form title is sufficient; keep the photo caption secondary. */
+@media(max-width:700px){.lead-dialog .modal-photo-copy h3{display:none}}

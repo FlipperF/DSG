@@ -656,6 +656,9 @@ body input:not([type=checkbox]):focus,body textarea:focus,body select:focus{outl
 @media(max-width:359px){.model-image{margin:-21px -21px 21px}}
 @media(prefers-reduced-motion:reduce){.model-card,.model-image img,.model-card-action svg{transition:none}.model-card:hover .model-image img,.model-card:hover .model-card-action svg{transform:none}}
 
+/* On phones the form title is sufficient; keep the photo caption secondary. */
+@media(max-width:700px){.lead-dialog .modal-photo-copy h3{display:none}}
+
 .error-page{--ice:#b6def2;--ease-in-out:cubic-bezier(.77,0,.175,1);background:#0b2139;color:#fff;min-height:100svh;overflow-x:hidden}
 .error-page:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 78% 47%,#12618a45,transparent 48%),linear-gradient(115deg,#0c263f,#081c30);z-index:-1}
 .error-shell{max-width:1600px;min-height:100svh;margin:auto;padding:34px 64px 24px;display:flex;flex-direction:column}
