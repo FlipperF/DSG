@@ -1,0 +1,10 @@
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404/index.html
+RewriteEngine On
+RewriteRule ^index\.html$ / [R=301,L,NE]
+RewriteRule ^brands\.html$ /brands/ [R=301,L,NE]
+RewriteRule ^gearboxes\.html$ /gearboxes/ [R=301,L,NE]
+RewriteRule ^404\.html$ /404/ [R=301,L,NE]
+RewriteCond %{THE_REQUEST} \s/+((?:brands|gearboxes|dsg|404))/index\.html[\s?] [NC]
+RewriteRule ^(brands|gearboxes|dsg|404)/index\.html$ /$1/ [R=301,L,NE]

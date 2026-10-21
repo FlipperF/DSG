@@ -1,0 +1,50 @@
+.repair-budget{background:#f3f7fa}
+.budget-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:60px;margin-bottom:40px}
+.budget-heading h2{font-size:46px;line-height:1.14;letter-spacing:-.045em}
+.budget-heading>p{font-size:17px;line-height:1.8;color:#536d80;max-width:490px}
+.budget-diagnostics{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:26px 32px;background:#e4eef5;border-radius:12px;margin-bottom:24px}
+.budget-diagnostics>div>strong{font-size:22px;font-weight:750;letter-spacing:-.025em}
+.budget-diagnostics p{font-size:15px;color:#536d80;margin-top:4px}
+.diagnostics-price{display:flex;gap:22px;align-items:center}
+.budget-diagnostics .diagnostics-price>strong{font-size:43px;white-space:nowrap;line-height:1}
+.diagnostics-price>span{font-size:15px;font-weight:650;line-height:1.7}
+.diagnostics-price small{font-size:12px;font-weight:450;color:#536d80}
+.repair-price-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.repair-price{background:#fff;border:1px solid #dce6ed;border-radius:12px;padding:30px 32px}
+.repair-price h3{font-size:23px;line-height:1.3;letter-spacing:-.025em}
+.repair-price-heading>p{font-size:14px;color:#647b8d;margin-top:5px}
+.repair-price dl{display:grid;grid-template-columns:1fr 1fr;gap:24px;border-top:1px solid #e4ebf0;padding-top:20px;margin:22px 0 0}
+.repair-price dl>div+div{border-left:1px solid #e4ebf0;padding-left:24px}
+.repair-price dt{font-size:12px;color:#647b8d;line-height:1.5;margin-bottom:6px}
+.repair-price dd{font-size:26px;line-height:1.3;font-weight:750;letter-spacing:-.035em;margin:0;font-variant-numeric:tabular-nums;white-space:nowrap}
+.repair-price dd span{font-size:20px}
+.budget-note{font-size:13px;line-height:1.7;color:#647b8d;margin-top:19px}
+.installment-panel{display:grid;grid-template-columns:1fr 1fr;gap:32px 60px;padding:42px 40px;margin-top:42px;background:#123650;border-radius:14px;color:#fff}
+.installment-intro h3{font-size:34px;line-height:1.18;letter-spacing:-.035em}
+.installment-intro>p{font-size:15px;line-height:1.75;color:#c4d7e5;max-width:340px;margin-top:17px}
+.installment-terms{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-self:center}
+.installment-terms>div+div{border-left:1px solid #ffffff30;padding-left:32px}
+.installment-terms strong{display:block;font-size:82px;line-height:.95;letter-spacing:-.06em;font-weight:650}
+.installment-terms strong span{font-size:22px;display:inline-block;letter-spacing:-.02em;margin-left:9px}
+.installment-terms>div:first-child strong span{display:block;margin:11px 0 0;font-size:23px}
+.installment-terms p{font-size:13px;color:#c4d7e5;margin-top:13px}
+.budget-action{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:25px;border-top:1px solid #ffffff25;padding-top:28px}
+.budget-action>p{font-size:16px;line-height:1.7;color:#dce8f1}
+.budget-action .button{font-size:15px;gap:30px;min-width:330px}
+@media(max-width:960px){.budget-heading{gap:30px}.budget-heading h2{font-size:38px}.budget-heading>p{font-size:16px;max-width:360px}.repair-price{padding:25px}.repair-price h3{font-size:21px}.repair-price dd{font-size:23px}.installment-panel{padding:34px;gap:30px}.installment-terms{gap:22px}.installment-terms>div+div{padding-left:22px}.installment-terms strong{font-size:70px}.installment-intro h3{font-size:30px}}
+@media(max-width:700px){.budget-heading{display:block;margin-bottom:28px}.budget-heading h2{font-size:34px}.budget-heading>p{max-width:none;margin-top:18px;font-size:16px}.budget-diagnostics{display:block;padding:25px;margin-bottom:18px}.budget-diagnostics>div>strong{font-size:22px}.budget-diagnostics p{font-size:15px;margin-top:9px}.diagnostics-price{margin-top:24px;padding-top:20px;border-top:1px solid #c8dbe7;gap:19px}.budget-diagnostics .diagnostics-price>strong{font-size:43px}.diagnostics-price>span{font-size:14px}.diagnostics-price small{font-size:11px}.repair-price-grid{grid-template-columns:1fr;gap:14px}.repair-price{padding:24px}.repair-price h3{font-size:22px}.repair-price dl{gap:17px;margin-top:20px;padding-top:18px}.repair-price dl>div+div{padding-left:17px}.repair-price dt{font-size:12px}.repair-price dd{font-size:23px}.repair-price dd span{font-size:17px}.budget-note{font-size:13px;margin-top:17px}.installment-panel{grid-template-columns:1fr;padding:29px 25px;gap:30px;margin-top:30px}.installment-intro h3{font-size:31px}.installment-intro>p{font-size:15px;max-width:none}.installment-terms{gap:25px}.installment-terms>div+div{padding-left:25px}.installment-terms strong{font-size:74px}.installment-terms strong span{font-size:25px}.installment-terms>div:first-child strong span{font-size:22px}.budget-action{display:block;padding-top:24px}.budget-action>p{font-size:15px}.budget-action .button{width:100%;min-width:0;font-size:14px;padding-inline:17px;gap:14px;margin-top:22px}}
+@media(max-width:359px){.repair-price{padding:21px}.repair-price dd{font-size:20px}.repair-price dl{gap:13px}.repair-price dl>div+div{padding-left:13px}.installment-panel{padding:26px 22px}.installment-terms{gap:18px}.installment-terms>div+div{padding-left:18px}.installment-terms strong{font-size:64px}.budget-action .button{font-size:12px}}
+
+/* Approved light banner: live text and CTA, separate 3D illustration. */
+.financing-banner{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 80% 30%,#f4fbff 0%,#e6f2fa 55%,#dfedf7 100%);border-radius:14px;margin-top:42px;padding:43px 42px;min-height:385px;color:#123650}
+.financing-copy{position:relative;z-index:2;width:54%}
+.financing-copy h3{font-size:43px;line-height:1.12;letter-spacing:-.045em;font-weight:800}
+.financing-offer{font-size:24px;font-weight:750;line-height:1.4;letter-spacing:-.025em;margin-top:24px}
+.financing-detail{font-size:15px;line-height:1.75;color:#425f74;max-width:420px;margin-top:12px}
+.financing-copy .button{font-size:15px;min-height:57px;margin-top:24px;padding-inline:24px;gap:24px}
+.financing-copy .button>span{font-size:25px}
+.financing-art{position:absolute;z-index:1;right:9px;bottom:0;width:44%;height:100%;object-fit:contain;object-position:center bottom;pointer-events:none;user-select:none}
+@media(min-width:1440px){.financing-copy h3{font-size:48px}.financing-banner{min-height:410px;padding:47px}.financing-offer{font-size:26px}}
+@media(max-width:960px){.financing-banner{padding:33px;min-height:360px}.financing-copy{width:56%}.financing-copy h3{font-size:36px}.financing-offer{font-size:21px}.financing-detail{font-size:14px;max-width:310px}.financing-copy .button{font-size:13px;padding-inline:19px;gap:15px}.financing-art{width:41%;right:0}}
+@media(max-width:700px){.financing-banner{display:flex;flex-direction:column;min-height:0;padding:28px 25px 0;margin-top:30px}.financing-copy{width:100%}.financing-copy h3{font-size:34px;line-height:1.15}.financing-offer{font-size:21px;line-height:1.4;margin-top:21px;max-width:280px}.financing-detail{font-size:15px;line-height:1.7;margin-top:12px;max-width:none}.financing-copy .button{width:100%;font-size:13px;gap:14px;padding-inline:16px;margin-top:23px}.financing-art{position:relative;right:auto;bottom:auto;align-self:center;width:100%;height:auto;max-width:340px;margin-top:20px;object-fit:contain}}
+@media(max-width:359px){.financing-banner{padding-inline:21px}.financing-copy h3{font-size:30px}.financing-offer{font-size:19px}.financing-copy .button{font-size:12px;padding-inline:12px;gap:9px}}

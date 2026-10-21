@@ -1,0 +1,24 @@
+/* Tow banner: one offer, a diagonal blue field and one primary action. */
+.tow-section-new{padding:36px 0 48px;background:#fff}
+.tow-banner{position:relative;isolation:isolate;display:grid;grid-template-columns:1.05fr 1fr;align-items:center;min-height:460px;overflow:hidden;border-radius:24px;background:#0b253d;color:#fff;padding:48px 50px;gap:0}
+.tow-banner:before{content:"";position:absolute;z-index:-1;inset:0 0 0 44%;background:linear-gradient(140deg,#2388bd,#12527d);clip-path:polygon(28% 0,100% 0,100% 100%,0 100%)}
+.tow-banner:after{content:"";position:absolute;z-index:-1;right:5%;bottom:12%;width:35%;height:18%;background:#071b2e;filter:blur(28px);opacity:.35;border-radius:50%}
+.tow-copy{position:relative;z-index:1;min-width:0}.tow-kicker{margin:0 0 14px;color:#b9d9ed;font-size:15px;font-weight:500}.tow-copy h2{margin:0;color:#fff;font-size:38px;line-height:1.14;letter-spacing:-.035em}.tow-offer{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:24px 0 17px;color:#fff;font-size:24px;line-height:1.1}.tow-offer strong{font-size:64px;font-weight:750;letter-spacing:-.045em}.tow-offer>span{font-size:24px}.tow-arrival{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin:0 0 28px;color:#d3e6f2;font-size:17px}.tow-arrival svg{width:23px;height:23px;margin-right:5px;flex-shrink:0}.tow-arrival strong{color:#fff;font-weight:650}.tow-copy>.button{min-height:56px;min-width:245px;justify-content:space-between}.tow-condition{max-width:350px;margin:14px 0 0;font-size:13px;line-height:1.5;color:#bed1df}.tow-art{position:relative;min-width:0;pointer-events:none;align-self:center;margin:0 -40px 0 -35px}.tow-art img{display:block;width:100%;height:auto;filter:drop-shadow(0 18px 14px #061c3540)}
+@media(max-width:1100px){.tow-banner{padding:38px 32px;min-height:420px}.tow-copy h2{font-size:31px}.tow-offer strong{font-size:54px}.tow-offer,.tow-offer>span{font-size:21px}.tow-art{margin-right:-28px}}
+@media(max-width:700px){.tow-section-new{padding:24px 0 30px}.tow-banner{grid-template-columns:1fr;padding:30px 24px 0;border-radius:20px;min-height:0}.tow-banner:before{inset:48% 0 0;clip-path:polygon(100% 0,100% 100%,0 100%,0 36%)}.tow-copy h2{font-size:30px}.tow-kicker{font-size:14px}.tow-offer{gap:8px;margin-top:22px}.tow-offer strong{font-size:53px}.tow-offer,.tow-offer>span{font-size:21px}.tow-arrival{font-size:15px;margin-bottom:23px;gap:5px}.tow-copy>.button{width:100%;min-width:0}.tow-condition{font-size:12px}.tow-art{margin:14px -24px -8px}.tow-art img{width:100%}}
+/* Selected “Вылет”: a forward-facing recovery vehicle, framed by motion geometry. */
+.tow-banner:before{background:linear-gradient(130deg,#389fc5,#166599 65%,#103f69)}
+.tow-flight{position:absolute;right:0;top:0;bottom:0;width:53%;margin:0;align-self:auto;pointer-events:none}
+.tow-orbit{position:absolute;width:560px;height:560px;border:1px solid #9de2ff45;border-radius:50%;left:0;top:-120px;box-shadow:0 0 0 44px #82d4f008,0 0 0 88px #82d4f008}
+.tow-speed{position:absolute;width:62%;height:2px;background:linear-gradient(90deg,transparent,#bdeeff90);transform:rotate(-24deg);transform-origin:right center;right:10%}.tow-speed-one{top:15%}.tow-speed-two{top:24%;right:0;width:45%}.tow-speed-three{bottom:8%;right:20%;width:70%}
+.tow-vehicle{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}.tow-vehicle img{width:108%;max-width:none;height:auto;filter:drop-shadow(0 24px 18px #021b3655)}
+.tow-flight[data-motion=waiting] .tow-vehicle{opacity:0;transform:translate(28px,-8px) scale(.97)}
+.tow-flight[data-motion=waiting] .tow-speed{opacity:0;transform:rotate(-24deg) scaleX(.75)}
+.tow-flight[data-motion=playing] .tow-vehicle{animation:tow-arrive 650ms var(--ease-out) both}
+.tow-flight[data-motion=playing] .tow-speed{animation:tow-trail 600ms var(--ease-out) 80ms both}
+.tow-flight[data-motion=playing] .tow-speed-two{animation-delay:130ms}.tow-flight[data-motion=playing] .tow-speed-three{animation-delay:180ms}
+@keyframes tow-arrive{from{opacity:0;transform:translate(28px,-8px) scale(.97)}to{opacity:1;transform:translate(0,0) scale(1)}}
+@keyframes tow-trail{from{opacity:0;transform:rotate(-24deg) scaleX(.75)}to{opacity:1;transform:rotate(-24deg) scaleX(1)}}
+@media(max-width:700px){.tow-flight{position:relative;width:calc(100% + 48px);height:270px;inset:auto;margin:18px -24px 0}.tow-vehicle img{width:108%}.tow-orbit{width:350px;height:350px;top:-20px}.tow-speed-one{top:12%}.tow-speed-three{bottom:5%}}
+@media(prefers-reduced-motion:reduce){.tow-flight[data-motion=waiting] .tow-vehicle,.tow-flight[data-motion=waiting] .tow-speed{opacity:1;transform:none}.tow-flight[data-motion=playing] .tow-vehicle,.tow-flight[data-motion=playing] .tow-speed{animation:tow-gentle 160ms ease both}.tow-flight .tow-speed{transform:rotate(-24deg)!important}@keyframes tow-gentle{from{opacity:.8}to{opacity:1}}}
+@media(max-width:700px){.tow-flight{overflow:hidden}.tow-vehicle img{width:96%}}

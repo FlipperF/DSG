@@ -1,0 +1,40 @@
+/* Brand directory: large real logos, model examples and a clear next step. */
+.brands-hero .inner-hero-grid{grid-template-columns:1.1fr .9fr}
+.brands-hero h1{font-size:clamp(40px,3.5vw,51px)}
+.brands-hero-photo{height:355px}.brands-hero-photo>img{object-position:61% center}
+.brand-family-section .section-intro{max-width:450px}
+.auto-brand-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.auto-brand-card{display:block;min-width:0;border:1px solid #d4e2ec;background:#f6f9fc;border-radius:12px;padding:29px 31px 22px;scroll-margin-top:155px;color:#153c56;transition:border-color 180ms ease,background-color 180ms ease}
+.auto-brand-top{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:66px}
+.auto-brand-logo{display:flex;align-items:center;justify-content:flex-start;width:126px;height:66px}
+.auto-brand-logo img{display:block;width:86px;height:62px;object-fit:contain;object-position:left center}
+.auto-brand-card#brand-audi .auto-brand-logo img{width:120px;height:53px}
+.auto-brand-card#brand-ford .auto-brand-logo img{width:112px;height:60px}
+.auto-brand-family{font-size:12px;color:#2c6f95;background:#e6f0f7;border:1px solid #c5dce9;border-radius:5px;padding:5px 11px;line-height:1.5;white-space:nowrap}
+.auto-brand-card h3{font-size:29px;line-height:1.25;letter-spacing:-.03em;margin-top:18px}
+.auto-brand-models{margin-top:19px}.auto-brand-models>span{display:block;font-size:12px;color:#526f83;margin-bottom:6px}
+.auto-brand-models p{font-size:16px;line-height:1.75;color:#294d67;min-height:28px}
+.auto-brand-indices{font-size:13px;line-height:1.7;color:#536e82;margin-top:10px}
+.auto-brand-link{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:14px;font-weight:750;line-height:1.5;padding-top:19px;border-top:1px solid #cfdfe9;margin-top:23px;color:#226d96}
+.auto-brand-link svg{width:21px;height:21px;flex:0 0 21px}
+.brand-section-bottom{display:flex;align-items:center;justify-content:space-between;gap:30px;margin-top:29px}
+.brand-section-bottom>p{font-size:14px;line-height:1.8;color:#536d80;max-width:630px}.brand-section-bottom strong{display:block;font-weight:600;color:#294f6a}
+.brand-section-bottom .button{font-size:14px;min-width:300px;justify-content:space-between;gap:20px}
+.powershift-brands{background:#eef4f8}.powershift-brands .auto-brand-card{background:white}
+.brand-identification-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:stretch}
+.brand-help-photo{position:relative;border-radius:10px;overflow:hidden;background:#173a55;min-height:500px}
+.brand-help-photo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:64% center}
+.brand-help-photo:after{content:'';position:absolute;inset:50% 0 0;background:linear-gradient(transparent,#071d31da)}
+.brand-help-photo>span{position:absolute;bottom:25px;left:27px;right:27px;z-index:1;color:#fff;font-size:16px;font-weight:600}
+.brand-help-copy h2{font-size:36px;line-height:1.2}.brand-help-copy>p:not(.eyebrow){font-size:17px;line-height:1.8;color:#536d80;margin-top:22px}
+.car-data-list{list-style:none;padding:0;margin:23px 0 29px}
+.car-data-list li{display:flex;align-items:flex-start;gap:17px;padding:16px 0;border-top:1px solid #dce6ee}
+.car-data-list li>span{color:#2a779f;font-size:12px;line-height:1.8;padding-top:2px}
+.car-data-list strong{display:block;font-size:18px;line-height:1.4;letter-spacing:-.02em}
+.car-data-list p{font-size:14px;line-height:1.7;color:#536d80;margin-top:6px}
+.brand-help-copy>.button{font-size:14px;gap:22px}.brand-final .catalog-help-action .button{font-size:14px}
+@media(hover:hover) and (pointer:fine){.auto-brand-card:hover{background:#edf5fa;border-color:#88b2cc}.powershift-brands .auto-brand-card:hover{background:#f6fafc}.auto-brand-card:hover .auto-brand-link{text-decoration:underline;text-underline-offset:4px}}
+@media(max-width:1190px){.brands-hero .inner-hero-grid{gap:35px}.brands-hero h1{font-size:43px}.auto-brand-card{padding:25px}.auto-brand-models p{font-size:15px}.brand-section-bottom{gap:25px}.brand-section-bottom>p{font-size:13px}.brand-section-bottom .button{min-width:275px;font-size:13px}.brand-identification-grid{gap:40px}.brand-help-copy h2{font-size:33px}.brand-help-copy>p:not(.eyebrow){font-size:16px}}
+@media(max-width:960px){.brands-hero .inner-hero-grid{grid-template-columns:1.1fr .9fr;gap:25px}.brands-hero h1{font-size:37px}.brands-hero-photo{height:340px}.auto-brand-grid{gap:17px}.auto-brand-card{padding:23px}.auto-brand-top{gap:12px}.auto-brand-family{font-size:10px;padding:5px 8px}.auto-brand-logo{width:100px}.auto-brand-card#brand-audi .auto-brand-logo img{width:100px}.auto-brand-card h3{font-size:27px}.auto-brand-models p{min-height:79px}.auto-brand-indices{min-height:45px;font-size:12px}.auto-brand-link{font-size:13px}.brand-section-bottom{align-items:flex-start}.brand-identification-grid{grid-template-columns:.85fr 1.15fr;gap:30px}.brand-help-copy h2{font-size:31px}.brand-help-copy>p:not(.eyebrow){font-size:16px}.car-data-list p{font-size:13px}.brand-help-photo>span{font-size:14px;left:20px;right:20px}}
+@media(max-width:700px){.brands-hero .inner-hero-grid{grid-template-columns:1fr;gap:27px}.brands-hero h1{font-size:37px}.brands-hero-photo{height:230px}.brands-hero .inner-facts{font-size:12px}.auto-brand-grid{grid-template-columns:1fr;gap:17px}.auto-brand-card{padding:24px;scroll-margin-top:95px}.auto-brand-top{min-height:60px}.auto-brand-logo{height:60px;width:125px}.auto-brand-logo img{width:82px;height:58px}.auto-brand-card#brand-audi .auto-brand-logo img{width:115px}.auto-brand-card#brand-ford .auto-brand-logo img{width:108px}.auto-brand-family{font-size:11px}.auto-brand-card h3{font-size:29px;margin-top:17px}.auto-brand-models{margin-top:16px}.auto-brand-models p{font-size:16px;min-height:0}.auto-brand-indices{font-size:13px;min-height:0;margin-top:10px}.auto-brand-link{font-size:14px;margin-top:21px}.brand-section-bottom{display:block;margin-top:24px}.brand-section-bottom>p{font-size:14px}.brand-section-bottom .button{width:100%;min-width:0;font-size:13px;margin-top:21px;padding-inline:18px}.brand-identification-grid{grid-template-columns:1fr;gap:29px}.brand-help-photo{min-height:0;height:245px}.brand-help-photo>img{object-position:60% 43%}.brand-help-photo>span{font-size:15px;bottom:22px}.brand-help-copy h2{font-size:31px}.brand-help-copy>p:not(.eyebrow){font-size:16px}.car-data-list strong{font-size:19px}.car-data-list p{font-size:14px}.brand-help-copy>.button{width:100%;font-size:13px;justify-content:space-between;padding-inline:18px}.brand-final .help-guarantee span{font-size:12px}.brand-final .help-guarantee{gap:23px}}
+@media(max-width:359px){.brands-hero h1{font-size:33px}.brands-hero .inner-hero-actions .button{font-size:12px}.auto-brand-card{padding:21px}.auto-brand-card h3{font-size:27px}.auto-brand-family{font-size:10px}.auto-brand-models p{font-size:15px}.auto-brand-link{font-size:13px}.brand-help-copy h2{font-size:29px}}
